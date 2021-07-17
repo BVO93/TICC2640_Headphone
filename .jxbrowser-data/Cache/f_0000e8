@@ -1,0 +1,913 @@
+<!DOCTYPE html><html><head>
+  <meta charset="UTF-8">
+  <title>SimpleLink™ Academy 4.40.00 for SimpleLink CC13x2 / CC26x2 SDK 4.40</title>
+<link rel="stylesheet" href="web_support/strapdown/v/0.2/fonts/ubuntu-regular-woff.css"><link rel="stylesheet" href="web_support/strapdown/v/0.2/fonts/glyphicons-halflings-regular.css"><link rel="stylesheet" href="web_support/strapdown/v/0.2/themes/united2.min.css"><link rel="stylesheet" href="web_support/strapdown/v/0.2/themes/bootstrap-responsive.min.css"><link rel="stylesheet" href="web_support/strapdown/v/0.2/strapdown.css"><link rel="shortcut icon" type="image/x-icon" href=".metadata/favicon.ico"></head>
+
+<!-- START PRE -->
+
+
+
+
+
+
+<!-- END PRE -->
+
+<body style=""><div class="container"><nav class="navbar navbar-default navbar-static-top"><div class="container-fluid"> <div class="navbar-header">  <div id="headline" class="navbar-brand">SimpleLink™ Academy 4.40.00 for SimpleLink CC13x2 / CC26x2 SDK 4.40</div> </div> </div></nav><div class="container"><div class="row row-offcanvas row-offcanvas-left"><div class="col-xs-12 col-sm-9" id="content"><center>
+<div class="modal-pop" style="cursor:zoom-in;"><img src=".metadata/simplelink_academy_logo_notext_400px.png" alt="" class="img-responsive"></div>
+</center>
+
+<p><br>
+Welcome to SimpleLink™ Academy - a great starting point for all developers to learn about the SimpleLink MCU Platform, the industry's broadest portfolio of wired and wireless ARM Cortex-M based microcontrollers. SimpleLink Academy delivers easy-to-use training modules that span a wide range of topics for all LaunchPads in the SimpleLink MCU family.</p>
+<div class="bs-callout bs-callout-warning "><h4><span class="glyphicon glyphicon-exclamation-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Is this the right package?
+</span></h4>
+<p>The current SimpleLink Academy package you are viewing is intended for
+SimpleLink CC13x2 / CC26x2 SDK SDK 4.40 - please ensure it matches the
+intended SDK.</p>
+</div>
+<h1 class="body-heading" id="getting-started">Getting Started<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#getting-started"></a></h1><p>There are multiple ways to get started with SimpleLink Academy. The easiest place to start is from the device’s LaunchPad Out of Box experience. If you want to learn more about a specific technology, start with the Fundamentals section or navigate to the relevant section in the Lab Overview below.</p>
+<div class="bs-callout bs-callout-info "><h4><span class="glyphicon glyphicon-info-sign gi-2x" style="vertical-align: middle; margin-right: 0.2em;"></span><span style="vertical-align: middle;">Suggested Curriculum for CC13x2 / CC26x2 SDK
+</span></h4>
+<p>The CC13x2 / CC26x2 SDK contains the TI BLE5-Stack, the TI-OpenThread Stack, TI
+15.4-Stack, and TI Z-Stack, as well as a range of proprietary RF
+examples to be used when developing wireless applications. If
+you are new to the SimpleLink SDK ecosystem, please start with the LaunchPad Out
+ of Box Lab.</p>
+<p>If you want to learn more about a specific technology, navigate to the relevant
+section in the <a href="#lab-overview">Lab overview</a> below. Each technology
+will provide some guidance on the best way to get started with that particular
+protocol. All wireless technologies in the CC13x2 / CC26x2 SDK are TI-RTOS based so it
+is good to have a thorough understanding of TI-RTOS &amp; TI Drivers before diving
+into the protocol stacks.</p>
+<p>Each lab has a <code>Prerequisites</code> section which tells you what material you need to
+have covered already.</p>
+</div>
+<h1 class="body-heading" id="lab-overview">Lab overview<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#lab-overview"></a></h1><h2 class="body-heading" id="launchpad-out-of-box-experience">LaunchPad Out of Box Experience<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#launchpad-out-of-box-experience"></a></h2><p style="color: #777; margin-left: 4px;"> These labs demonstrate the LaunchPad Out of Box Experiences showcasing the SimpleLink SDK </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/ble5stack/ble_agama_oobe/launchpad_oobe.html">CC13x2 LaunchPad Out of Box Experience</a></td>
+<td>Get started with the LAUNCHXL-CC1352R Out-Of-Box Experience</td>
+</tr>
+<tr>
+<td><a href="modules/lpstk/lpstk_oobe/lpstk_oobe.html">LaunchPad SensorTag (LPSTK) Out of Box Experience</a></td>
+<td>Get started with the LPSTK-CC1352R Out-Of-Box Experience</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="bluetooth-5">Bluetooth 5<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#bluetooth-5"></a></h2><p style="color: #777; margin-left: 4px;"> Labs related to using Bluetooth 5 and the BLE5-Stack. We recommend starting with the "Fundamentals" lab for a jump directly into Bluetooth® low energy and then progressing down the list of labs. If you are unfamiliar with the TI SDKs you might want to read through the lecture on RTOS Concepts and do a TI-RTOS lab first. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/ble5stack/ble_01_basic/ble_01_basic.html">Bluetooth Low Energy 5 Fundamentals</a></td>
+<td>Setting up the debug environment, connecting to Project Zero using the Device Monitor PC tool, reading and writing characteristic data, changing the advertisement/device name</td>
+</tr>
+<tr>
+<td><a href="modules/ble5stack/ble_scan_adv_basic/ble_scan_adv_basic.html">Scanning and Advertising</a></td>
+<td>Tutorial on how to use the advertising and scanning features of the TI BLE-Stack with example code.</td>
+</tr>
+<tr>
+<td><a href="modules/ble5stack/ble_connections/ble_connections.html">Connections</a></td>
+<td>This tutorial will give you an overview of how to set up Bluetooth low energy connections suited to your needs. Explanation of key concepts such as master-slave and connection parameters.</td>
+</tr>
+<tr>
+<td><a href="modules/ble5stack/ble_phy/ble_phy.html">Bluetooth 5 PHY</a></td>
+<td>Learn about Bluetooth 5 PHYs - Higher throughput with 2 Mbps PHY compared to Legacy 1 Mbps PHY or increase range with Coded PHY.</td>
+</tr>
+<tr>
+<td><a href="modules/ble5stack/ble_01_custom_profile/ble_01_custom_profile.html">Custom Profile</a></td>
+<td>Explanation of the GATT and ATT protocols that Bluetooth Low Energy data exchange is based on, a walk-through of how to implement a custom Bluetooth service using the APIs provided in the TI BLE SDK, and a basic code generator for custom services</td>
+</tr>
+<tr>
+<td><a href="modules/ble5stack/ble_enhanced_oad/ble_enhanced_oad.html">BLE Enhanced OAD</a></td>
+<td>Learn about the fundamentals of TI's Over the Air Dowload (OAD) solution. Topics include performing an OAD, factory images, adding OAD to exisitng projects, and advanced OAD debugging techniques.</td>
+</tr>
+<tr>
+<td><a href="modules/ble5stack/ble_02_security/ble_02_sec_funds.html">BLE Security Fundamentals</a></td>
+<td>Learn about the fundamentals of the security protocols in the TI BLE-Stack. Topics include Pairing, Bonding and Privacy.</td>
+</tr>
+<tr>
+<td><a href="modules/ble5stack/ble_advanced_security/ble_sec_adv.html">Advanced Security Features</a></td>
+<td>Learn about the advanced security features in the BLE5-Satck, such as using AES drivers for encryption and how to use a white list.</td>
+</tr>
+<tr>
+<td><a href="modules/ble5stack/ble_coex/ble_coex.html">BLE Coexistence Configuration</a></td>
+<td>Learn how to configure a BLE device for wireless PTA coexistence with a Wi-Fi device.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="bluetooth-mesh">Bluetooth Mesh<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#bluetooth-mesh"></a></h2><p style="color: #777; margin-left: 4px;"> Learn how to use TI Bluetooth Low Energy Mesh </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/blemesh/ble_mesh_basic/ble_mesh_basic.html">TI Bluetooth Mesh Fundamentals</a></td>
+<td>Learn about the fundamentals of TI's Bluetooth Mesh solution. Setting up the debug environment, using the simple_mesh_node application, configuring a mesh node</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="rtls-toolbox">RTLS Toolbox<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#rtls-toolbox"></a></h2><p style="color: #777; margin-left: 4px;"> Learn how to use the TI Bluetooth Low Energy RTLS Toolbox. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/rtls_toolbox_ble5/ble_aoa/ble_aoa.html">Angle of Arrival (AoA)</a></td>
+<td>Learn about the fundamentals of TI's Angle of Arrival solution. Topics include getting started with the RTLS Toolbox environment, the technique and theory of Angle of Arrival and explore using TI's AoA solution.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="ti-openthread">TI-OpenThread<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#ti-openthread"></a></h2><p style="color: #777; margin-left: 4px;"> Learn about using the Texas Instruments Thread Stack implementation based on OpenThread within the SimpleLink Ecosystem. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/thread/thread_00_cli_project_0/thread_00_cli_project_0.html">Thread CLI Project Zero</a></td>
+<td>Introduction to TI-OpenThread using the Command Line Example</td>
+</tr>
+<tr>
+<td><a href="modules/thread/thread_01_border_router/thread_01_border_router.html">Thread Border Router Setup</a></td>
+<td>Setup a Thread Border Router with the Network Co-Processor Example</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="proprietary-rf">Proprietary RF<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#proprietary-rf"></a></h2><p style="color: #777; margin-left: 4px;"> These labs are related to developing proprietary RF protocols and applications using the CC13xx and CC26xx devices. We recommend starting with the "Basic RX and TX" lab to understand the basics first. If you are unfamiliar with the TI SDKs you might want to read through the lecture on RTOS Concepts and do a TI-RTOS lab first. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/prop_rf/prop_01_basic/prop_01_basic.html">Basic RX and TX</a></td>
+<td>Code Composer Studio, SmartRF Studio training. Import, modify, build and run RF examples for the CC13x0, CC13x2 and CC2640R2 devices through a series of tasks</td>
+</tr>
+<tr>
+<td><a href="modules/prop_rf/prop_02_wsn_example/prop_02_wsn_example.html">Wireless Sensor Network example</a></td>
+<td>Set up a Concentrator and one (or more) Node(s) in a Wireless Sensor Network using the WSN example included in TI-RTOS</td>
+</tr>
+<tr>
+<td><a href="modules/prop_rf/prop_03_easylink_nwp/prop_03_easylink_nwp.html">EasyLink Network Processor example</a></td>
+<td>Use the EasyLink serial AT command API to control the proprietary radio to send and receive data</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="ti-15-4-stack">TI 15.4-Stack<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#ti-15-4-stack"></a></h2><p style="color: #777; margin-left: 4px;"> These labs are related to developing applications that are using the TI 15.4-Stack. The recommendation is to start with the "Sensor and Collector - TI 15.4-Stack Project Zero" lab. If you are unfamiliar with the TI SDKs you might want to read through the lecture on RTOS Concepts and do a TI-RTOS lab first. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/154-stack/154-stack_01_sensor_collector/154-stack_01_sensor_collector.html">Sensor and Collector - TI 15.4-Stack Project Zero</a></td>
+<td>Use TI 15.4-Stack and build the sensor and collector examples in order to create a star network.</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_02_portable_app_remote_sensor/154-stack_02_portable_app_remote_sensor.html">Using TI 15.4-Stack and portable app to create a remote sensor</a></td>
+<td>Using the TI 15.4-Stack and portable app to create a remote sensor.</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_03_linux_project_0/154-stack_03_linux_project_0.html">TI 15.4-Stack - Linux Gateway Project Zero</a></td>
+<td>Using the TI 15.4-Stack Linux SDK to create a sensor network.</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_04_adding_new_sensor/154-stack_04_adding_new_sensor.html">TI 15.4-Stack - Adding a New Sensor</a></td>
+<td>Learn about how to add new sensors, display the data on CUI, and send the data over the air.</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_05_oad/154-stack_05_oad.html">TI 15.4-Stack - Over the Air Download (OAD)</a></td>
+<td>Learn about how to update your remote sensors over the air without the need of physically accessing them</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_01_sensor_collector/154-stack_01_sensor_collector.html">Sensor and Collector - TI 15.4-Stack Project Zero</a></td>
+<td>Use TI 15.4-Stack and build the sensor and collector examples in order to create a star network.</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_02_portable_app_remote_sensor/154-stack_02_portable_app_remote_sensor.html">Using TI 15.4-Stack and portable app to create a remote sensor</a></td>
+<td>Using the TI 15.4-Stack and portable app to create a remote sensor.</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_03_linux_project_0/154-stack_03_linux_project_0.html">TI 15.4-Stack - Linux Gateway Project Zero</a></td>
+<td>Using the TI 15.4-Stack Linux SDK to create a sensor network.</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_04_adding_new_sensor/154-stack_04_adding_new_sensor.html">TI 15.4-Stack - Adding a New Sensor</a></td>
+<td>Learn about how to add new sensors, display the data on CUI, and send the data over the air.</td>
+</tr>
+<tr>
+<td><a href="modules/154-stack/154-stack_05_oad/154-stack_05_oad.html">TI 15.4-Stack - Over the Air Download (OAD)</a></td>
+<td>Learn about how to update your remote sensors over the air without the need of physically accessing them</td>
+</tr>
+<tr>
+<td><a href="modules/lpstk/lpstk_15_4/lpstk-154.html">LPSTK TI 15.4-Stack</a></td>
+<td>Create a TI 15.4 network with the LaunchPad SensorTag.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="dynamic-multi-protocol-manager">Dynamic Multi-Protocol Manager<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#dynamic-multi-protocol-manager"></a></h2><p style="color: #777; margin-left: 4px;"> The Dynamic Multi-Protocol Manager allows two RF applications to coexist on the same device and supports scheduling and priorities. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/dmm/dmm_fundamentals/dmm_fundamentals.html">DMM Fundamentals</a></td>
+<td>How to setup the DMM remote display example and what to take into consideration when making a DMM project.</td>
+</tr>
+<tr>
+<td><a href="modules/dmm/customizing_use_case/customizing_use_case.html">Customizing Use Case</a></td>
+<td>How to extend and modify an existing DMM example in order to change the use case of the project.</td>
+</tr>
+<tr>
+<td><a href="modules/dmm/dmm_integration/dmm_integration.html">DMM Integration</a></td>
+<td>Setting up a DMM project from scratch, showing how to DMM convert a existing proprietary radio protocol and run it alongside another radio protocol stack.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="sensor-controller-studio">Sensor Controller Studio<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#sensor-controller-studio"></a></h2><p style="color: #777; margin-left: 4px;"> Learn how to develop, test, and debug code for the Sensor Controller on CC13xx and CC26xx devices using Sensor Controller Studio. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/sensor_controller/sc_01_basic/sc_01_basic.html">Sensor Controller Fundamentals</a></td>
+<td>Entry level guide on how to use the Sensor Controller with the GUI tool, Sensor Controller Studio (SCS). You will generate, download and debug code on the sensor controller processor (16-bit custom low power RISC processor).</td>
+</tr>
+<tr>
+<td><a href="modules/sensor_controller/sc_01_project_from_scratch/sc_01_project_from_scratch.html">Project from Scratch</a></td>
+<td>Create a new Sensor Controller Studio project, generate the sensor controller driver and integrate with an TI-RTOS application</td>
+</tr>
+<tr>
+<td><a href="modules/sensor_controller/sc_02_ulpsense/sc_02_ulpsense.html">Ultra-Low Power Sensing</a></td>
+<td>Explore ultra-low power sensoring with the ULP Sense BoosterPack, and learn how to create low-power applications with the boosterpack. Flow metering is used as an example application.</td>
+</tr>
+<tr>
+<td><a href="modules/sensor_controller/sc_02_capacitive_sensing_and_runtime_logging/sc_capacitive_sensing_and_runtime_logging.html">Sensor Controller - Capacitive Touch</a></td>
+<td>Learn about how to do capacitive touch with the Sensor Controller and how to do run time logging</td>
+</tr>
+<tr>
+<td><a href="modules/sensor_controller/sc_03_custom_routines/sc_03_custom_routines.html">Sensor Controller Code Optimization and Custom Procedures</a></td>
+<td>Learn about how to do optimize your sensor controller code and how to write new custom procedures</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="real-time-os">Real-Time OS<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#real-time-os"></a></h2><p style="color: #777; margin-left: 4px;"> Learn about RTOS concepts such as scheduling, semaphores, tasks using the RTOS support on the SimpleLink devices. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/rtos/rtos_concepts/rtos_concepts.html">RTOS Concepts</a></td>
+<td>A general overview of concepts used in Real-Time Operating Systems such as task/threads, scheduling, semaphore</td>
+</tr>
+<tr>
+<td><a href="modules/rtos/tirtos_basics/tirtos_basics.html">TI-RTOS Basics</a></td>
+<td>Introductory training to using TI-RTOS in the CCS IDE</td>
+</tr>
+<tr>
+<td><a href="modules/rtos/posix_project_zero/posix_project_zero.html">POSIX Project Zero</a></td>
+<td>Introduction to how POSIX is supported in SimpleLink SDKs, creating threads and creating and using message queues</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="ti-drivers">TI Drivers<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#ti-drivers"></a></h2><p style="color: #777; margin-left: 4px;"> Learn how to use the TI-provided peripheral drivers in your product. </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/tidrivers/tidrivers_project_zero/tidrivers_project_zero.html">Project Zero</a></td>
+<td>An introduction to using TI Drivers within the SimpleLink SDK, a common set of functional peripheral APIs that enable 100% code portability between SimpleLink MCU devices.</td>
+</tr>
+<tr>
+<td><a href="modules/tidrivers/tidrivers_project_zero_GUI_jtag_xds/tidrivers_project_zero_GUI_jtag_xds.html">GUI Composer ADC Application</a></td>
+<td>Easily create HTML-based graphical user interfaces (GUIs) that feature gauges, sliders, charts &amp; more, to complement your SimpleLink MCU-based applications</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="zigbee">Zigbee<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#zigbee"></a></h2><p style="color: #777; margin-left: 4px;"> Learn about low-power mesh networks with Zigbee </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/zigbee/zigbee_01_light_switch/zigbee_01_light_switch.html">Light and Switch - Zigbee Project Zero</a></td>
+<td>Get started with Zigbee networking by forming a simple Zigbee network.</td>
+</tr>
+<tr>
+<td><a href="modules/zigbee/zigbee_02_custom_devices/zigbee_02_custom_devices.html">Designing a Custom Zigbee 3.0-Certifiable Product Using GenericApp</a></td>
+<td>Design your own custom Zigbee 3.0 device</td>
+</tr>
+<tr>
+<td><a href="modules/zigbee/zigbee_03_fundamentals/zigbee_03_fundamentals.html">Zigbee Fundamental Project Development</a></td>
+<td>Using Z-Stack features and API to develop a custom application</td>
+</tr>
+<tr>
+<td><a href="modules/zigbee/zigbee_04_security/zigbee_04_security.html">Zigbee Security Features</a></td>
+<td>Using Z-Stack security features to protect centralized networks from attack</td>
+</tr>
+<tr>
+<td><a href="modules/zigbee/zigbee_05_zigbee_linux_gateway/zigbee_05_zigbee_linux_gateway.html">Z-Stack - Zigbee Linux Gateway Project Zero</a></td>
+<td>Using the Zigbee Linux Gateway SDK for a Zigbee-to-IP gateway solution</td>
+</tr>
+<tr>
+<td><a href="modules/zigbee/zigbee_06_zcl/zigbee_06_zcl.html">Zigbee ZCL: Keepalive/Poll Control Cluster and Groups/Scenes</a></td>
+<td>Using keepalives/poll control cluster and groups/scenes</td>
+</tr>
+<tr>
+<td><a href="modules/lpstk/lpstk_zigbee_light_switch/lpstk_zigbee_light_switch.html">Creating a Zigbee Network with LPSTK</a></td>
+<td>Design a Zigbee network with a Light and Switch using LaunchPad SensorTag</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="debugging">Debugging<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#debugging"></a></h2><p style="color: #777; margin-left: 4px;"> Learn about different ways to develop and debug projects with the SimpleLink MCU SDKs </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/debug/debugging_output/debugging_output.html">Debug Printing</a></td>
+<td>Explains the different ways that an application can output debug info at runtime.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="body-heading" id="tools">Tools<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#tools"></a></h2><p style="color: #777; margin-left: 4px;"> Learn about different tools that can be used with the SimpleLink MCU SDKs </p>
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Lab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="modules/tools/sysconfig_basics/sysconfig_basics.html">SysConfig Tool Basics</a></td>
+<td>Introduction to the SysConfig tool to configure your system.</td>
+</tr>
+<tr>
+<td><a href="modules/tools/ascstudio/analog_sensor_studio.html">Analog Signal Chain Studio Basics</a></td>
+<td>Introduction to Analog Signal Chain Studio</td>
+</tr>
+</tbody>
+</table>
+<h1 class="body-heading" id="videos">Videos<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#videos"></a></h1><table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Video</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://training.ti.com/how-get-started-cc1310-packet-rxtx-example-0">How to get started with CC1310 Packet RX/TX example</a></td>
+<td>Code Composer Studio makes it easy to utilize the TI-RTOS drivers for the SimpleLink CC13xx device. Using TI-RTOS and CCS, it is easy to get started with examples that showcase the capabilities of the CC1310</td>
+</tr>
+<tr>
+<td><a href="https://training.ti.com/wireless-network-node-concentrator-example">CC13xx Wireless Sensor Network Node and Concentrator example</a></td>
+<td>The Wireless Sensor Network Concentrator and Node examples showcases how to use Sub-1GHz Wireless MCU technology with sensor-based applications</td>
+</tr>
+<tr>
+<td><a href="https://training.ti.com/why-sub-1ghz">Why Sub1-GHz</a></td>
+<td>In this video, we describe the advantages of using Sub-1GHz wireless communication, and why Sub-1GHz communication can increase range, reduce power consumption, and increase reliability</td>
+</tr>
+<tr>
+<td><a href="https://training.ti.com/simplelink-academy-introduction-sensor-controller">Introduction to the CC13xx/CC26xx Sensor Controller</a></td>
+<td>Describes what the Sensor Controller programmable CPU is, how it works, and how to use it</td>
+</tr>
+</tbody>
+</table>
+<h1 class="body-heading" id="what-s-new">What's new<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#what-s-new"></a></h1><div class="bs-callout bs-callout-success "><h4><span style="vertical-align: middle;">v4.40.00 - January 22nd 2021
+</span></h4>
+<ul>
+<li>New lab for BLE Mesh</li>
+<li>New SysConfig ImageCreator Basics lecture for CC32xx SDK</li>
+<li>Updated CC32xx labs for SysConfig ImageCreator Tool</li>
+<li>Updates to RTLS Toolbox lab</li>
+<li>Updates to BLE labs to use appropriate language nomenclature directive </li>
+<li>Update and bug fixes for SimpleLink CC13x2 26x2 SDK v4.40</li>
+<li>Update and bug fixes for SimpleLink CC32xx SDK v4.40</li>
+</ul>
+</div>
+<div class="panel-group">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle collapsed" data-toggle="collapse" href="#expandable_-older-versions-"><p> Older versions</p>
+</a>
+      </h4>
+    </div>
+    <div id="expandable_-older-versions-" class="panel-collapse collapse">
+      <div class="panel-body"><h2 class="body-heading" id="v4-30-02-november-9th-2020">v4.30.02 - November 9th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-30-02-november-9th-2020"></a></h2><ul>
+<li>Add analog Signal Chain Studio to WiFi SLA</li>
+<li>Bug fixes for Analog Signal Chain Studio</li>
+</ul>
+<h2 class="body-heading" id="v4-30-01-october-20th-2020">v4.30.01 - October 20th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-30-01-october-20th-2020"></a></h2><ul>
+<li>Updates and bug fixes for SimpleLink CC26x2 CC13x2 SDK v4.30</li>
+<li>Updates and bug fixes for SimpleLink CC2640R2 SDK v4.30</li>
+<li>New lab for Analog Signal Chain Studio</li>
+<li>Removed SysConfig labs for CC2640R2 and CC1310 SDKs</li>
+</ul>
+<h2 class="body-heading" id="v4-30-00-october-10th-2020">v4.30.00 - October 10th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-30-00-october-10th-2020"></a></h2><ul>
+<li>Updates and bug fixes for SimpleLink CC32xx SDK v4.30</li>
+<li>Updated Wi-Fi and SysConfig Basics labs for SysConfig Genlibs support</li>
+<li>Added FreeRTOS Basics lab including FreeRTOS ROV</li>
+</ul>
+<h2 class="body-heading" id="v4-20-03-august-14th-2020">v4.20.03 - August 14th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-20-03-august-14th-2020"></a></h2><ul>
+<li>Update and bug fixes for BLE labs</li>
+</ul>
+<h2 class="body-heading" id="v4-20-01-july-9th-2020">v4.20.01 - July 9th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-20-01-july-9th-2020"></a></h2><ul>
+<li><strong>New lab: 15.4 Stack adding a new sensor!</strong> Learn about how to add new sensors, display the data on CUI, and send the data over the air.</li>
+<li><strong>New lab: 15.4 Stack doing Over the Air Downloads (OAD)!</strong> Learn about how to update your remote sensors over the air without the need of physically accessing them.</li>
+<li>Update and bug fixes for SimpleLink CC13x2 26x2 SDK v3.40</li>
+<li>Update and bug fixes for SimpleLink CC2640R2 SDK v3.40</li>
+</ul>
+<h2 class="body-heading" id="v4-10-03-june-19th-2020">v4.10.03 - June 19th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-10-03-june-19th-2020"></a></h2><ul>
+<li>Add DICE Wi-Fi lab for CC32xx SDK</li>
+</ul>
+<h2 class="body-heading" id="v4-10-02-may-19th-2020">v4.10.02 - May 19th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-10-02-may-19th-2020"></a></h2><ul>
+<li>Update Wi-Fi labs for SimpleLink CC32xx SDK v4.10</li>
+</ul>
+<h2 class="body-heading" id="v4-10-01-april-20th-2020">v4.10.01 - April 20th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-10-01-april-20th-2020"></a></h2><ul>
+<li><strong>New lab: BLE Coexistence Configuration!</strong> Learn about how to use the new Coexistence feature for CC13x2 and CC26x2 devices.</li>
+<li>Update and bug fixes for SimpleLink CC13x2 26x2 SDK v4.10</li>
+<li>Update and bug fixes for SimpleLink CC2640R2 SDK v4.10</li>
+</ul>
+<h2 class="body-heading" id="v4-10-00-february-5th-2020">v4.10.00 - February 5th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v4-10-00-february-5th-2020"></a></h2><ul>
+<li>Maintenance for SimpleLink CC13x2 26x2 SDK v3.30</li>
+</ul>
+<h2 class="body-heading" id="v3-40-02-february-5th-2020">v3.40.02 - February 5th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-40-02-february-5th-2020"></a></h2><ul>
+<li>Update RTLS labs for SimpleLink CC13x2 26x2 SDK v3.40, this includes removing the rtls_intro and rts_tof labs</li>
+<li>Remove RTLS labs for SimpleLink CC2640R2 SDK v3.30</li>
+<li>Update Wi-Fi labs for SimpleLink CC32xx SDK v3.40</li>
+<li>Add Wi-Fi security suggested curriculum to CC32xx overview page</li>
+</ul>
+<h2 class="body-heading" id="v3-40-01-january-17th-2020">v3.40.01 - January 17th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-40-01-january-17th-2020"></a></h2><ul>
+<li>Add AWS Provisioning lab for CC32xx Plugin for AWS IoT</li>
+</ul>
+<h2 class="body-heading" id="v3-40-00-january-16th-2020">v3.40.00 - January 16th 2020<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-40-00-january-16th-2020"></a></h2><ul>
+<li>Update and bug fixes for SimpleLink CC13x2 26x2 SDK v3.40</li>
+<li>Update and bug fixes for SimpleLink CC2640R2 SDK v3.40</li>
+</ul>
+<h2 class="body-heading" id="v3-30-03-november-21st-2019">v3.30.03 - November 21st 2019<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-30-03-november-21st-2019"></a></h2><ul>
+<li>Remove disclaimer in RTLS labs</li>
+</ul>
+<h2 class="body-heading" id="v3-30-02-november-7th-2019">v3.30.02 - November 7th 2019<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-30-02-november-7th-2019"></a></h2><ul>
+<li>Created labs for LaunchPad SensorTag Kit (LPSTK)</li>
+<li>Updated RTLS labs for SimpleLink CC13x2 26x2 SDK v3.30</li>
+<li>Updated RTLS labs for SimpleLink CC2640R2 SDK v3.30</li>
+</ul>
+<h2 class="body-heading" id="v3-30-01-october-10th-2019">v3.30.01 - October 10th 2019<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-30-01-october-10th-2019"></a></h2><ul>
+<li>Update and bug fixes for SimpleLink CC13x2 26x2 SDK v3.30</li>
+<li>Added Sysconfig for SimpleLink CC13x2 26x2 SDK v3.30</li>
+<li>Update and bug fixes for SimpleLink CC2640R2 SDK v3.30</li>
+<li>Update and bug fixes for SimpleLink CC32xx SDK v3.30</li>
+<li>Added Sysconfig for SimpleLink CC32xx SDK v3.30</li>
+</ul>
+<h2 class="body-heading" id="v3-30-00-october-8th-2019">v3.30.00 - October 8th 2019<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-30-00-october-8th-2019"></a></h2><ul>
+<li>Updated TI 15.4 Stack Gateway related Trainings</li>
+<li>Updated TI 15.4 Stack/Zigbee Trainings to reflect CUI addition and Sysconfig</li>
+<li>Added Sysconfig for SimpleLink MSP432P4 SDK v3.30</li>
+<li>Added Sysconfig for SimpleLink MSP432E4 SDK v3.30</li>
+<li>Update and bug fixes for SimpleLink MSP432P4 SDK v3.30</li>
+<li>Update and bug fixes for SimpleLink MSP432E4 SDK v3.30</li>
+</ul>
+<h2 class="body-heading" id="v3-20-02-august-19th-2019">v3.20.02 - August 19th 2019<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-20-02-august-19th-2019"></a></h2><ul>
+<li>Added RTLS Intro, BLE 5.1 AoA, TI ToF labs for CC13x2 CC26x2 Product</li>
+<li>Added Advanced Security lab for CC13x2 CC26x2 Product</li>
+<li>Updates and bug fixes for CC32xx SDK v3.20</li>
+<li>Updated terminal screenshots and UniFlash ImageCreator instructions for Wi-Fi OTA lab</li>
+<li>Updates and bug fixes for CC13x2 26x2 SDK v3.20</li>
+<li>Updates and bug fixes for CC13x0 SDK v3.20</li>
+<li>Updates and bug fixes for CC2640R2 SDK v3.20</li>
+<li>Added BLE Security Fundamentals for CC26x2 and CC13x2</li>
+<li>Update and bug fixes for SimpleLink MSP432P4 SDK v3.20</li>
+</ul>
+<h2 class="body-heading" id="v3-10-02-april-22nd-2019">v3.10.02 - April 22nd 2019<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-10-02-april-22nd-2019"></a></h2><ul>
+<li>Add SimpleLink Academy to SimpleLink SDK BLE Plugin and SimpleLink SDK TI 15.4 Stack Plugin</li>
+<li>Moved all SimpleLink SDK Plugin labs from SimpleLink MSP432P4 and MSP432E4 SDKs to the respective Plugin packages</li>
+<li>Add Custom Power Performance Level lab for SimpleLink MSP432P4 SDK</li>
+<li>Update and bug fixes for SimpleLink MSP432P4 SDK v3.10</li>
+<li>Update and bug fixes for SimpleLink MSP432E4 SDK v3.10</li>
+</ul>
+<h2 class="body-heading" id="v3-10-01-april-17th-2019">v3.10.01 - April 17th 2019<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v3-10-01-april-17th-2019"></a></h2><ul>
+<li>Updates and bug fixes for CC13x2 26x2 SDK v3.10</li>
+<li>Updates and bug fixes for CC13x0 SDK v3.10</li>
+<li>Updates and bug fixes for CC2640R2 SDK v3.10</li>
+<li>Updates to RTLS labs for CC2640R2</li>
+<li>Updates for CC32xx SDK v3.10</li>
+<li>Added CC3235 support for Wi-Fi OTA and Portable + Wi-Fi</li>
+</ul>
+<h2 class="body-heading" id="v2-40-02-february-28th-2019">v2.40.02 - February 28th 2019<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-40-02-february-28th-2019"></a></h2><ul>
+<li>Gen 3 CC3235 and CC3135 support!</li>
+<li>New Out of Box Experiences for CC3235, CC3135, and CC3120 LaunchPads and BoosterPacks</li>
+<li>Add ADC Simultaneous Sampling lab for MSP432E4 SDK</li>
+<li>Update Wi-Fi labs for SDK and Plugin v2.40.00</li>
+<li>Update MSP432 labs for SDK v2.40.00</li>
+<li>Updated CC2640R2 and CC13x2/CC26x2 Labs for SDK v2.40.00</li>
+<li>Preliminary release for new RTLS labs scheduled end of Feb.</li>
+<li>New ZigBee Labs introduced</li>
+<li>New RTLS Toolbox labs for BLE</li>
+</ul>
+<h2 class="body-heading" id="v2-30-02-october-25th-2018">v2.30.02 - October 25th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-30-02-october-25th-2018"></a></h2><ul>
+<li>Added CC1352 and CC26x2 LaunchPad Out of Box Experience</li>
+<li>Added BLE Security Lab</li>
+<li>Added BLE Angle of Arrival Lab</li>
+<li>Added ZigBee to main content release</li>
+<li>New ZigBee Labs</li>
+<li>New Sensor Controller Lab</li>
+<li>Adjusted Overview page</li>
+</ul>
+<h2 class="body-heading" id="v2-30-01-october-11th-2018">v2.30.01 - October 11th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-30-01-october-11th-2018"></a></h2><ul>
+<li>Update MSP432 labs for SDK v2.30.00.14</li>
+<li>Minor fixes to MSP432 labs</li>
+</ul>
+<h2 class="body-heading" id="v2-30-00-october-2nd-2018">v2.30.00 - October 2nd 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-30-00-october-2nd-2018"></a></h2><ul>
+<li>Add CC3220 Out of Box LaunchPad Experience</li>
+<li>Added secure MQTT client demo to Wi-Fi MQTT lab</li>
+<li>Update Wi-Fi labs for CC32xx SDK 2.30.00.05</li>
+</ul>
+<h2 class="body-heading" id="v2-20-01-july-23rd-2018">v2.20.01 - July 23rd 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-20-01-july-23rd-2018"></a></h2><ul>
+<li>Add CC3220 Cryptographic Utilities, Wi-Fi Certificate Signing Request, and Porting an application from Ethernet to Wi-Fi labs</li>
+<li>Add UniFlash ImageCreator Basics lecture</li>
+<li>Update Portable + Wi-Fi lab with SimpleLink Net Socket layer</li>
+<li>Update Wi-Fi labs for CC3220 SDK 2.20.00.10</li>
+<li>Add TI 15.4 Stack Plugin Gateway lab</li>
+</ul>
+<h2 class="body-heading" id="v2-20-00-june-25th-2018">v2.20.00 - June 25th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-20-00-june-25th-2018"></a></h2><ul>
+<li>Update SimpleLink MSP432P4 Precision ADC Lab with ADCBuf Differential Mode Example</li>
+<li>Update MSP432 Wi-Fi OTA lab with screenshots of updated Uniflash interface</li>
+<li>Update MSP432E4 LaunchPad (EXP-MSP432E401Y) Out-of-Box lab with screenshots of updated Exosite UI</li>
+</ul>
+<h2 class="body-heading" id="v2-10-02-april-10th-2018">v2.10.02 - April 10th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-10-02-april-10th-2018"></a></h2><ul>
+<li>Add new DMM Fundamentals lab for SimpleLink CC13x2 SDK</li>
+<li>Add new Bluetooth 5 BLE Enhanced OAD lab for SimpleLink CC13x2 and CC26x2 SDKs</li>
+<li>Update CC13x0, CC13x2, and CC26x2 labs to support SimpleLink SDK 2.10</li>
+</ul>
+<h2 class="body-heading" id="v2-10-01-april-6th-2018">v2.10.01 - April 6th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-10-01-april-6th-2018"></a></h2><ul>
+<li>Add MQTT lab for MSP432E4 SDK</li>
+<li>Update MSP432E4 LaunchPad (EXP-MSP432E401Y) Out-of-Box lab for latest Exosite UI</li>
+<li>Update SimpleLink MSP432P4 Precision ADC Lab</li>
+<li>Minor bug fixes</li>
+</ul>
+<h2 class="body-heading" id="v2-10-00-april-4th-2018">v2.10.00 - April 4th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v2-10-00-april-4th-2018"></a></h2><ul>
+<li>Update Wi-Fi labs for CC3220 SDK 2.10.00.04</li>
+<li>Minor fixes to Wi-Fi labs</li>
+</ul>
+<h2 class="body-heading" id="v1-15-04-march-20th-2018">v1.15.04 - March 20th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-15-04-march-20th-2018"></a></h2><ul>
+<li>Add support for SimpleLink ZigBee SDK Plugin v1.60</li>
+<li>Add new Zigbee labs<ul>
+<li>Light and Switch - Zigbee Plugin Project Zero</li>
+<li>Designing a Custom Zigbee 3.0-Certifiable Product Using GenericApp</li>
+</ul>
+</li>
+</ul>
+<h2 class="body-heading" id="v1-15-03-january-18th-2018">v1.15.03 - January 18th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-15-03-january-18th-2018"></a></h2><ul>
+<li>Add support for SimpleLink CC13x2 and CC26x2 SDKs</li>
+<li>Add OpenThread labs for SimpleLink CC26x2 SDK</li>
+<li>Update Bluetooth labs to support TI BLE5-Stack for SimpleLink CC13x2 and CC26x2 SDKs</li>
+<li>Update CC13x0 labs to SDK 1.160</li>
+</ul>
+<h2 class="body-heading" id="v1-15-02-january-12th-2018">v1.15.02 - January 12th 2018<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-15-02-january-12th-2018"></a></h2><ul>
+<li>Added SimpleLink MSP432P4 Precision ADC Lab</li>
+<li>Added support for SimpleLink CC3220 SDK v1.60</li>
+</ul>
+<h2 class="body-heading" id="v1-15-01-december-13th-2017">v1.15.01 - December 13th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-15-01-december-13th-2017"></a></h2><ul>
+<li>Added support for the SimpleLink MSP432P4111 MCU</li>
+<li>LCD_F Training Lab</li>
+<li>MSP-EXP432P4111 LaunchPad Out-of-Box Lab</li>
+<li>Wi-Fi Over-the-Air Downloads Lab for MSP432</li>
+<li>Updated Wi-Fi Project Zero for MSP432</li>
+<li>Minor bug fixes</li>
+</ul>
+<h2 class="body-heading" id="v1-14-03-november-7th-2017">v1.14.03 - November 7th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-14-03-november-7th-2017"></a></h2><ul>
+<li>Added support for the SimpleLink MSP432E4 SDK and MCU</li>
+<li>Added Labs for Boot Loaders on the MSP432E4 device and the EXP-MSP432E401Y LaunchPad Out-of-Box</li>
+</ul>
+<h2 class="body-heading" id="v1-14-02-october-12th-2017">v1.14.02 - October 12th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-14-02-october-12th-2017"></a></h2><ul>
+<li>Add authentication to Wi-Fi OTA</li>
+<li>Update TI 15.4-Stack and Proprietary RF labs for <strong>SimpleLink CC13x0 SDK</strong> to
+use version 1.50 SDK</li>
+<li>Update Bluetooth 4.2 labs for <strong>SimpleLink CC2640R2 SDK</strong> to use version 1.50
+SDK</li>
+</ul>
+<h2 class="body-heading" id="v1-14-01-october-2nd-2017">v1.14.01 - October 2nd 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-14-01-october-2nd-2017"></a></h2><ul>
+<li>Update Wi-Fi labs for <strong>SimpleLink CC3220 SDK</strong> to use version 1.50 SDK</li>
+</ul>
+<h2 class="body-heading" id="v1-14-00-september-7th-2017">v1.14.00 - September 7th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-14-00-september-7th-2017"></a></h2><ul>
+<li>Add new labs for <strong>SimpleLink MSP432P4 SDK</strong>:<ul>
+<li>LaunchPad Power Measurements Using EnergyTrace™</li>
+<li>MSP-EXP432P401R LaunchPad Out-Of-Box</li>
+</ul>
+</li>
+<li>Add new labs for <strong>SimpleLink MSP432 SDK WiFi Plugin</strong><ul>
+<li>Wi-Fi Plugin Project Zero</li>
+</ul>
+</li>
+<li>Support for the <strong>SimpleLink MSP432P4 SDK</strong> v1.50</li>
+<li>Changed the name of the SDK to <strong>SimpleLink MSP432P4 SDK</strong></li>
+<li>Updated description of the precision ADC for the MSP432P4</li>
+</ul>
+<h2 class="body-heading" id="v1-13-03-august-30th-2017">v1.13.03 - August 30th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-13-03-august-30th-2017"></a></h2><ul>
+<li>Add new labs for <strong>SimpleLink CC2640R2 SDK</strong>:<ul>
+<li>TI Drivers IR Generation Lab</li>
+<li>Bluetooth 5 2Mbps PHY Lab</li>
+</ul>
+</li>
+<li>Add new labs for <strong>SimpleLink MSP432 SDK WiFi Plugin</strong><ul>
+<li>Wi-Fi Plugin Project Zero</li>
+</ul>
+</li>
+</ul>
+<h2 class="body-heading" id="v1-13-02-july-20th-2017">v1.13.02 - July 20th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-13-02-july-20th-2017"></a></h2><ul>
+<li>Add Project Zero for BLE5-Stack</li>
+<li>Add Sensor Controller labs for <strong>SimpleLink CC2640R2 SDK</strong><ul>
+<li>Fundamentals, using example included in Sensor Controller Studio, and how to
+make a project from scratch.</li>
+</ul>
+</li>
+<li>Update Bluetooth LE labs for <strong>SimpleLink CC2640R2 SDK</strong> to use version 1.40
+SDK</li>
+</ul>
+<h2 class="body-heading" id="v1-13-01-july-12th-2017">v1.13.01 - July 12th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-13-01-july-12th-2017"></a></h2><ul>
+<li>Add Sensor Controller labs for <strong>SimpleLink CC13x0 SDK</strong><ul>
+<li>Fundamentals, using example included in Sensor Controller Studio, and how to
+make a project from scratch.</li>
+</ul>
+</li>
+<li>Update TI 15.4-Stack and Proprietary RF labs for <strong>SimpleLink CC13x0 SDK</strong> to
+use version 1.40 SDK</li>
+<li>Update BLE Over the Air Download section of CC1350 Dual Mode lab for
+<strong>SimpleLink CC13x0 SDK</strong> to new SDK.</li>
+</ul>
+<h2 class="body-heading" id="v1-13-july-5th-2017">v1.13 - July 5th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-13-july-5th-2017"></a></h2><ul>
+<li>Update TIRTOS Basic, FreeRTOS, RTOS Concepts and TI Drivers labs for all
+SimpleLink SDKs to version 1.40. Minor fixes.</li>
+<li>Add recommended curriculum section and description of each lab category to
+overview page.</li>
+<li>Update labs for <strong>SimpleLink MSP432 SDK</strong><ul>
+<li>Single-threaded ADC. Minor fixes.</li>
+<li>Multi-threaded ADC, fixed I2C issue, added board solution file.</li>
+</ul>
+</li>
+<li>Add new WiFi labs for <strong>SimpleLink CC32xx SDK</strong><ul>
+<li>Wi-Fi Secure Socet, WiFi Secure File-System</li>
+</ul>
+</li>
+<li>Update existing Wi-Fi labs for <strong>SimpleLink CC32xx SDK</strong> to SDK version 1.40.</li>
+</ul>
+<h2 class="body-heading" id="v1-12-01-april-2nd-2017">v1.12.01 - April 2nd 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-12-01-april-2nd-2017"></a></h2><ul>
+<li>Update TIRTOS Basics lab for all SimpleLink SDKs. Minor fixes.</li>
+<li>Add new WiFi labs for <strong>SimpleLink CC32xx SDK</strong><ul>
+<li>WiFi OTA, WiFi MQTT</li>
+</ul>
+</li>
+<li>Add new Bluetooth LE labs for <strong>SimpleLink CC2640R2 SDK</strong><ul>
+<li>GAP Advertising/Scanning, GAP Connections</li>
+</ul>
+</li>
+<li>Update Bluetooth LE labs for <strong>SimpleLink CC2640R2 SDK</strong> to refer to SDK
+version 1.35</li>
+</ul>
+<h2 class="body-heading" id="v1-12-march-9th-2017">v1.12 - March 9th 2017<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-12-march-9th-2017"></a></h2><ul>
+<li>Updated all labs for SimpleLink SDK 1.30.0 compatibility</li>
+<li>Add TI Drivers labs for all SimpleLink SDKs<ul>
+<li>Project Zero, GPIO Interrupt, GUI Composer, Configuring TI drivers, Porting
+TI drivers</li>
+</ul>
+</li>
+<li>Add POSIX Project Zero lab for all SimpleLink SDKs</li>
+<li>Add RTOS Concepts lecture/informational lab for all SimpleLink SDKs</li>
+<li>Add new TI 15.4-Stack labs for <strong>SimpleLink CC13x0 SDK</strong><ul>
+<li>Sensor and Collector Project Zero, Using a portable SimpleLink SDK app with
+TI 15.4-Stack, Linux Gateway Project Zero</li>
+</ul>
+</li>
+<li>Add new Bluetooth low energy lab for <strong>SimpleLink CC2640R2 SDK</strong><ul>
+<li>Sensor Boosterpack portable example with Bluetooth low energy</li>
+</ul>
+</li>
+<li>Add new Wi-Fi labs for <strong>SimpleLink CC32xx SDK</strong><ul>
+<li>CC3220 Project Zero and CC3220 Portable Wi-Fi</li>
+</ul>
+</li>
+<li>Add new TI-Drivers labs for <strong>SimpleLink MSP432 SDK</strong><ul>
+<li>Single-threaded ADC and Multi-threaded RTOS Thermostat</li>
+</ul>
+</li>
+<li>Add new Plugin lab for <strong>SimpleLink MSP432 SDK</strong><ul>
+<li>Bluetooth SDK Plugin introduction</li>
+</ul>
+</li>
+<li>Remove Sensor Controller labs pending Sensor Controller Studio update for
+SimpleLink SDKs.</li>
+</ul>
+<h2 class="body-heading" id="v1-11-november-4th-2016">v1.11 - November 4th 2016<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-11-november-4th-2016"></a></h2><ul>
+<li>Update BLE projects to use BLE SDK v2.2.1</li>
+<li>Update all projects to use TI-RTOS 2.20.01.08</li>
+</ul>
+<h2 class="body-heading" id="v1-10-october-12th-2016">v1.10 - October 12th 2016<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-10-october-12th-2016"></a></h2><ul>
+<li>Add TI-RTOS IR Generation training</li>
+<li>Add Bluetooth Developer Studio training</li>
+<li>Update Simple Application Processor + Network Processor - Introduction to use
+MSP432 LaunchPad + CC2650 Module BoosterPack Hardware<ul>
+<li>Add MSP432 Project Zero to be used with updated Simple AP + Simple NP
+Introduction</li>
+<li>Removed SimpleNP and SimpleAP CC2650_LAUNCHXL projects</li>
+</ul>
+</li>
+<li>Add solution files for BLE custom profile training</li>
+</ul>
+<h2 class="body-heading" id="v1-09-september-16th-2016">v1.09 - September 16th 2016<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-09-september-16th-2016"></a></h2><ul>
+<li>Compatible with CCS 6.2.0<ul>
+<li>Fix a problem with a build variable that changed meaning from CCS 6.1.3 to
+6.2.0.</li>
+<li>Default to parallel build in project files</li>
+</ul>
+</li>
+<li>Add Sensor Controller workshops<ul>
+<li>Create&nbsp;Project&nbsp;from Scratch</li>
+<li>Task Creation and Control</li>
+</ul>
+</li>
+<li>Add Proprietary RF workshops<ul>
+<li>CC1350 Dual Band Out of the Box Demo</li>
+<li>CC1350 Dual Band Launchpad Project Zero</li>
+</ul>
+</li>
+<li>Add videos<ul>
+<li>Developing your first project with Project Zero and CCS Cloud</li>
+<li>Introduction to the Sensor Controller</li>
+<li>How to get started with CC1310 Packet RX/TX example</li>
+<li>CC13xx Wireless Sensor Network Node and Concentrator example</li>
+<li>Why Sub1-GHz?</li>
+</ul>
+</li>
+<li>Fix issue with 'app usage' code for code generator in Custom Profile workshop</li>
+</ul>
+<h2 class="body-heading" id="v1-08-june-21st-2016">v1.08 - June 21st 2016<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-08-june-21st-2016"></a></h2><ul>
+<li>Update BLE projects to use BLE SDK v2.2.0</li>
+<li>Update all projects to use TI-RTOS 2.18</li>
+<li>Removed custom version of HostTest</li>
+<li>Added Proprietary RF workshops<ul>
+<li>Basic RX/TX</li>
+<li>Wireless Sensor Network</li>
+<li>EasyLink serial API</li>
+</ul>
+</li>
+</ul>
+<h2 class="body-heading" id="v1-07-may-4th-2016">v1.07 - May 4th 2016<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-07-may-4th-2016"></a></h2><ul>
+<li>Fix direction of memcpy for the service generator in GetParameter_XX.</li>
+<li>Remove references to Board_KEY_RIGHT from TI-RTOS Lab 1.</li>
+</ul>
+<h2 class="body-heading" id="v1-06-march-10th-2016">v1.06 - March 10th 2016<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-06-march-10th-2016"></a></h2><ul>
+<li>Update to use BLE SDK v2.1.1</li>
+<li>Added CCS Desktop Projects<ul>
+<li>HostTest</li>
+<li>Project Zero</li>
+</ul>
+</li>
+<li>Change BLE examples to use Project Zero instead of TrainingTag</li>
+<li>Add support for eval kits CC2650-LAUNCHXL, CC2650-STK and CC2650DK to<ul>
+<li>Project Zero</li>
+<li>TI-RTOS Basic</li>
+<li>HostTest</li>
+</ul>
+</li>
+</ul>
+<h2 class="body-heading" id="v1-05-january-29th-2016">v1.05 - January 29th 2016<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-05-january-29th-2016"></a></h2><ul>
+<li>Add training modules<ul>
+<li>Simple Network/Application Processor Introduction</li>
+</ul>
+</li>
+<li>Added CCS Desktop projects<ul>
+<li>SimpleNP - SimpleNP project ported CC2650_LAUNCHXL</li>
+<li>SimpleAP -SimpleAP project modified to work on CC2650_LAUNCHXL with SCIF
+UART display added</li>
+</ul>
+</li>
+</ul>
+<h2 class="body-heading" id="v1-04-january-21st-2016">v1.04 - January 21st 2016<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-04-january-21st-2016"></a></h2><ul>
+<li>Add training modules<ul>
+<li>Sensor Controller Studio Basic - I2C Light Sensor</li>
+</ul>
+</li>
+<li>Change projects to support CC2650_LAUNCHXL by default</li>
+</ul>
+<h2 class="body-heading" id="v1-03-august-25th-2015">v1.03 - August 25th 2015<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#v1-03-august-25th-2015"></a></h2><ul>
+<li>Initial release.</li>
+<li>Targeting CCS Desktop 6.1, TI-RTOS for SimpleLink Wireless MCUs 2.13.00.06 and
+TI BLE SDK v2.1.</li>
+<li>Added training modules<ul>
+<li>TI-RTOS Basics</li>
+<li>Bluetooth Smart Basics</li>
+<li>Bluetooth Smart Custom profile</li>
+</ul>
+</li>
+<li>Added CCS Desktop projects<ul>
+<li><del>HostTestTag</del> - HostTest project modified to work on SensorTag rev 1.3 and
+Devpack-Debug rev 1.2.</li>
+<li><del>BLE TrainingTag</del> - SimpleBLEPeripheral project modified to work on
+SensorTag rev 1.3 and Devpack-Debug rev 1.2</li>
+<li>TI RTOS Basics Lab 1 - Basic project without radio stack.</li>
+</ul>
+</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div></div><div class="col-xs-4 col-sm-2 sidebar-offcanvas bs-docs-sidebar hidden-print" id="sidebar-overview"><ul class="nav nav-stacked fixed" id="sidebar"><li><a href="#getting-started">Getting Started</a></li><li><a href="#lab-overview">Lab overview</a><ul class="nav nav-stacked"><li><a href="#launchpad-out-of-box-experience">LaunchPad Out of Box Experience</a></li><li><a href="#bluetooth-5">Bluetooth 5</a></li><li><a href="#bluetooth-mesh">Bluetooth Mesh</a></li><li><a href="#rtls-toolbox">RTLS Toolbox</a></li><li><a href="#ti-openthread">TI-OpenThread</a></li><li><a href="#proprietary-rf">Proprietary RF</a></li><li><a href="#ti-15-4-stack">TI 15.4-Stack</a></li><li><a href="#dynamic-multi-protocol-manager">Dynamic Multi-Protocol Manager</a></li><li><a href="#sensor-controller-studio">Sensor Controller Studio</a></li><li><a href="#real-time-os">Real-Time OS</a></li><li><a href="#ti-drivers">TI Drivers</a></li><li><a href="#zigbee">Zigbee</a></li><li><a href="#debugging">Debugging</a></li><li><a href="#tools">Tools</a></li></ul></li><li><a href="#videos">Videos</a></li><li><a href="#what-s-new">What's new</a><ul class="nav nav-stacked"><li><a href="#v4-30-02-november-9th-2020">v4.30.02 - November 9th 2020</a></li><li><a href="#v4-30-01-october-20th-2020">v4.30.01 - October 20th 2020</a></li><li><a href="#v4-30-00-october-10th-2020">v4.30.00 - October 10th 2020</a></li><li><a href="#v4-20-03-august-14th-2020">v4.20.03 - August 14th 2020</a></li><li><a href="#v4-20-01-july-9th-2020">v4.20.01 - July 9th 2020</a></li><li><a href="#v4-10-03-june-19th-2020">v4.10.03 - June 19th 2020</a></li><li><a href="#v4-10-02-may-19th-2020">v4.10.02 - May 19th 2020</a></li><li><a href="#v4-10-01-april-20th-2020">v4.10.01 - April 20th 2020</a></li><li><a href="#v4-10-00-february-5th-2020">v4.10.00 - February 5th 2020</a></li><li><a href="#v3-40-02-february-5th-2020">v3.40.02 - February 5th 2020</a></li><li><a href="#v3-40-01-january-17th-2020">v3.40.01 - January 17th 2020</a></li><li><a href="#v3-40-00-january-16th-2020">v3.40.00 - January 16th 2020</a></li><li><a href="#v3-30-03-november-21st-2019">v3.30.03 - November 21st 2019</a></li><li><a href="#v3-30-02-november-7th-2019">v3.30.02 - November 7th 2019</a></li><li><a href="#v3-30-01-october-10th-2019">v3.30.01 - October 10th 2019</a></li><li><a href="#v3-30-00-october-8th-2019">v3.30.00 - October 8th 2019</a></li><li><a href="#v3-20-02-august-19th-2019">v3.20.02 - August 19th 2019</a></li><li><a href="#v3-10-02-april-22nd-2019">v3.10.02 - April 22nd 2019</a></li><li><a href="#v3-10-01-april-17th-2019">v3.10.01 - April 17th 2019</a></li><li><a href="#v2-40-02-february-28th-2019">v2.40.02 - February 28th 2019</a></li><li><a href="#v2-30-02-october-25th-2018">v2.30.02 - October 25th 2018</a></li><li><a href="#v2-30-01-october-11th-2018">v2.30.01 - October 11th 2018</a></li><li><a href="#v2-30-00-october-2nd-2018">v2.30.00 - October 2nd 2018</a></li><li><a href="#v2-20-01-july-23rd-2018">v2.20.01 - July 23rd 2018</a></li><li><a href="#v2-20-00-june-25th-2018">v2.20.00 - June 25th 2018</a></li><li><a href="#v2-10-02-april-10th-2018">v2.10.02 - April 10th 2018</a></li><li><a href="#v2-10-01-april-6th-2018">v2.10.01 - April 6th 2018</a></li><li><a href="#v2-10-00-april-4th-2018">v2.10.00 - April 4th 2018</a></li><li><a href="#v1-15-04-march-20th-2018">v1.15.04 - March 20th 2018</a></li><li><a href="#v1-15-03-january-18th-2018">v1.15.03 - January 18th 2018</a></li><li><a href="#v1-15-02-january-12th-2018">v1.15.02 - January 12th 2018</a></li><li><a href="#v1-15-01-december-13th-2017">v1.15.01 - December 13th 2017</a></li><li><a href="#v1-14-03-november-7th-2017">v1.14.03 - November 7th 2017</a></li><li><a href="#v1-14-02-october-12th-2017">v1.14.02 - October 12th 2017</a></li><li><a href="#v1-14-01-october-2nd-2017">v1.14.01 - October 2nd 2017</a></li><li><a href="#v1-14-00-september-7th-2017">v1.14.00 - September 7th 2017</a></li><li><a href="#v1-13-03-august-30th-2017">v1.13.03 - August 30th 2017</a></li><li><a href="#v1-13-02-july-20th-2017">v1.13.02 - July 20th 2017</a></li><li><a href="#v1-13-01-july-12th-2017">v1.13.01 - July 12th 2017</a></li><li><a href="#v1-13-july-5th-2017">v1.13 - July 5th 2017</a></li><li><a href="#v1-12-01-april-2nd-2017">v1.12.01 - April 2nd 2017</a></li><li><a href="#v1-12-march-9th-2017">v1.12 - March 9th 2017</a></li><li><a href="#v1-11-november-4th-2016">v1.11 - November 4th 2016</a></li><li><a href="#v1-10-october-12th-2016">v1.10 - October 12th 2016</a></li><li><a href="#v1-09-september-16th-2016">v1.09 - September 16th 2016</a></li><li><a href="#v1-08-june-21st-2016">v1.08 - June 21st 2016</a></li><li><a href="#v1-07-may-4th-2016">v1.07 - May 4th 2016</a></li><li><a href="#v1-06-march-10th-2016">v1.06 - March 10th 2016</a></li><li><a href="#v1-05-january-29th-2016">v1.05 - January 29th 2016</a></li><li><a href="#v1-04-january-21st-2016">v1.04 - January 21st 2016</a></li><li><a href="#v1-03-august-25th-2015">v1.03 - August 25th 2015</a></li></ul></li></ul></div></div></div></div>
+
+<link rel="stylesheet" href="web_support/highlight/styles/zenburn.css">
+<script src="web_support/strapdown/vendor/jquery-1.11.2.min.js"></script>
+<script src="web_support/strapdown/vendor/bootstrap.min.js"></script>
+<script src="web_support/highlight/highlight.pack.js"></script>
+<script type="text/javascript">document.isPreRendered = true;</script><script src="web_support/strapdown/v/0.2/strapdown.js"></script>      <div class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">        <div class="vertical-alignment-helper">          <div class="modal-dialog vertical-align-center">             <div class="modal-dialog">               <div class="modal-content" style="margin-left: auto;margin-right: auto;">                 <div class="modal-body">                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>                   <img src="" class="imagepreview img-responsive">                 </div>              </div>            </div>          </div>        </div>      </div>
+<script src="web_support/serialize-object/jquery.serialize-object.min.js"></script>
+
+<style>
+td { min-width: 200px; }
+h2, .h2 { font-size: 24px; }
+</style>
+
+</body></html>

@@ -1,0 +1,22 @@
+-----TI-REX started at Thu May 20 2021 18:10:11 GMT+0200 (W. Europe Summer Time)
+Thu, 20 May 2021 16:10:15 GMT connect deprecated methodOverride: use method-override npm module instead at app.js:641:21
+ "IPv4",
+        "mac": "0a:00:27:00:00:05",
+        "internal": false
+    }
+]
+2021-05-20T16:10:11.278Z INFO DAEMON dinfra - [
+    "multiple candidate address ignored",
+    "WiFi",
+    {
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4",
+        "mac": "0a:00:27:00:00:05",
+        "internal": false
+    }
+]
+-----TI-REX started at Thu May 20 2021 18:10:11 GMT+0200 (W. Europe Summer Time)
+TIREX server listening on port 55432
+setting to  false
+setting to  true
