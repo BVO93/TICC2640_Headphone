@@ -2974,3 +2974,61 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstud
 
 !ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:40:06.369
 !MESSAGE CloudTrace interface loaded
+!SESSION 2021-07-17 10:51:23.239 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-07-17 10:51:27.214
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-07-17 10:51:27.215
+!MESSAGE debugServerDir=C:/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-07-17 10:51:35.529
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-07-17 10:51:35.540
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-07-17 10:51:35.541
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-07-17 10:51:36.762
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: C:/ti/ccs910/ccs
+	Workspace location: C:/Users/bjorn/workspace_v9
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.135
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.137
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.138
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.140
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.141
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.148
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.151
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.154
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.164
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-07-17 10:51:37.209
+!MESSAGE CloudTrace interface loaded

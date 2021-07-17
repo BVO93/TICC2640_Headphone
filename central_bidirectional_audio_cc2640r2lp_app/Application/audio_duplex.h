@@ -79,7 +79,7 @@ extern "C"
 #define AUDIO_DUPLEX_VOLUME_UP                      0x01
 #define AUDIO_DUPLEX_VOLUME_DOWN                    0xFF
 
-#define AUDIO_DUPLEX_INPUT_OPTION                   AUDIO_CODEC_MIC_ONBOARD
+#define AUDIO_DUPLEX_INPUT_OPTION                   AUDIO_CODEC_MIC_MONO //AUDIO_CODEC_MIC_ONBOARD
 #define AUDIO_DUPLEX_OUTPUT_OPTION                  AUDIO_CODEC_SPEAKER_HP
 #define AUDIO_DUPLEX_MAX_VOLUME                     75
 

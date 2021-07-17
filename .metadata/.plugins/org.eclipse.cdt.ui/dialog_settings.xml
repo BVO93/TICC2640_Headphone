@@ -13,6 +13,7 @@
 		<item value="false" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+			<item value="AUDIO_CODEC_MIC_ONBOARD"/>
 			<item value="AUDIO_CODEC_MIC_MONO"/>
 			<item value="IN3"/>
 			<item value="IN3R"/>
